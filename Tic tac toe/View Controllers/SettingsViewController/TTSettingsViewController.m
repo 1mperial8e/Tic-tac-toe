@@ -12,6 +12,7 @@
 @interface TTSettingsViewController ()
 
 - (IBAction)signOut:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end
 
@@ -53,5 +54,9 @@
     if ([[GPGManager sharedInstance] isSignedIn]){
         [[GPPSignIn sharedInstance] signOut];
     }
+}
+
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end
