@@ -26,6 +26,7 @@
 		8430D1661910F8BA00434C7E /* TTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D1651910F8BA00434C7E /* TTGameViewController.m */; };
 		8430D16E1910FA0300434C7E /* TTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D16D1910FA0300434C7E /* TTSettingsViewController.m */; };
 		8430D171191101DD00434C7E /* MPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D170191101DD00434C7E /* MPManager.m */; };
+		8430D1741911236600434C7E /* TTOnlineLobbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D1731911236600434C7E /* TTOnlineLobbyViewController.m */; };
 		C82AD14B0CC9480FAF4D22EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB9AC7F7C9F45B0B292FE53 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		8430D16D1910FA0300434C7E /* TTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSettingsViewController.m; path = SettingsViewController/TTSettingsViewController.m; sourceTree = "<group>"; };
 		8430D16F191101DD00434C7E /* MPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPManager.h; sourceTree = "<group>"; };
 		8430D170191101DD00434C7E /* MPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPManager.m; sourceTree = "<group>"; };
+		8430D1721911236600434C7E /* TTOnlineLobbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTOnlineLobbyViewController.h; path = OnlineLobbyViewController/TTOnlineLobbyViewController.h; sourceTree = "<group>"; };
+		8430D1731911236600434C7E /* TTOnlineLobbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTOnlineLobbyViewController.m; path = OnlineLobbyViewController/TTOnlineLobbyViewController.m; sourceTree = "<group>"; };
 		BEB9AC7F7C9F45B0B292FE53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -188,6 +191,7 @@
 				8430D1601910F7CE00434C7E /* StartViewController */,
 				8430D1671910F8C200434C7E /* GameViewController */,
 				8430D16B1910F92000434C7E /* SettingsViewController */,
+				8430D1751911236D00434C7E /* OnlineLobbyViewController */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -217,6 +221,15 @@
 				8430D16D1910FA0300434C7E /* TTSettingsViewController.m */,
 			);
 			name = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		8430D1751911236D00434C7E /* OnlineLobbyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8430D1721911236600434C7E /* TTOnlineLobbyViewController.h */,
+				8430D1731911236600434C7E /* TTOnlineLobbyViewController.m */,
+			);
+			name = OnlineLobbyViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8430D1741911236600434C7E /* TTOnlineLobbyViewController.m in Sources */,
 				8430D1351910E5E100434C7E /* TTAppDelegate.m in Sources */,
 				8430D1311910E5E100434C7E /* main.m in Sources */,
 				8430D16E1910FA0300434C7E /* TTSettingsViewController.m in Sources */,

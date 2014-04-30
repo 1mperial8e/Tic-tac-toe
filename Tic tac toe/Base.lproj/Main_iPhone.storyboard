@@ -44,7 +44,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onlineMultiplayerButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LCS-7N-0bx"/>
+                                    <segue destination="Bg7-dw-zGS" kind="push" id="2aw-XR-Qwf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80N-IJ-wxT">
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="747" y="-231"/>
+            <point key="canvasLocation" x="707" y="-582"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7nQ-PX-az7">
@@ -114,7 +114,38 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mlu-Uw-LFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="-231"/>
+            <point key="canvasLocation" x="274" y="-582"/>
+        </scene>
+        <!--Online Lobby View Controller-->
+        <scene sceneID="WcF-9s-2wJ">
+            <objects>
+                <viewController id="Bg7-dw-zGS" customClass="TTOnlineLobbyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m0X-5w-8bP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xvd-vZ-lPm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EEd-WP-5gc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-pq-Rep">
+                                <rect key="frame" x="25" y="64" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="Bg7-dw-zGS" eventType="touchUpInside" id="dBc-4D-YSW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qdd-td-8jM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ek6-AL-7pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469" y="-1295"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="Ag5-dd-eT2">
