@@ -10,6 +10,8 @@
 
 @interface TTGameViewController ()
 
+- (IBAction)back:(id)sender;
+
 @end
 
 @implementation TTGameViewController
@@ -46,4 +48,7 @@
 }
 */
 
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end
