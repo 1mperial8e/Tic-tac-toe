@@ -1,22 +1,20 @@
 //
-//  TTSettengsViewController.m
+//  TTOnlineLobbyViewController.m
 //  Tic tac toe
 //
 //  Created by Stas Volskyi on 30.04.14.
 //  Copyright (c) 2014 mobilesoft365. All rights reserved.
 //
 
-#import "TTSettingsViewController.h"
-#import "TTStartViewController.h"
+#import "TTOnlineLobbyViewController.h"
+#import "GooglePlus.h"
 
-@interface TTSettingsViewController ()
+@interface TTOnlineLobbyViewController () <UIAlertViewDelegate>
 
-- (IBAction)signOut:(id)sender;
-- (IBAction)back:(id)sender;
-
+- (IBAction)backButton:(id)sender;
 @end
 
-@implementation TTSettingsViewController
+@implementation TTOnlineLobbyViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    if (![[GPGManager sharedInstance] isSignedIn])
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No connection" message:@"For playing online, please sign in via google+" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Sign in", nil];
+        [alert show];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,15 +51,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)backButton:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
-- (IBAction)signOut:(id)sender {
-    if ([[GPGManager sharedInstance] isSignedIn]){
-        [[GPPSignIn sharedInstance] signOut];
-        NSLog(@"Signed out");
+#pragma mark - UIAlertViewDelegate methods
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 1:{
+            [[GPPSignIn sharedInstance] authenticate];
+        }
     }
 }
 
-- (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
+
 @end

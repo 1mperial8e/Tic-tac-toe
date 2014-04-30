@@ -22,21 +22,8 @@ static MPManager *_instance = nil;
   }
   return _instance;
 }
-
-- (void)startQuickMatchGameWithTotalPlayers:(int)totalPlayers
-{
-  GPGMultiplayerConfig *config = [[GPGMultiplayerConfig alloc] init];
-  config.minAutoMatchingPlayers = totalPlayers - 1;
-  config.maxAutoMatchingPlayers = totalPlayers - 1;
-
-  // Could also include variants or exclusive bitmasks here
-  GPGRealTimeRoomViewController *roomViewController = [[GPGRealTimeRoomViewController alloc] initAndCreateRoomWithConfig:config];
-  [self.lobbyDelegate showInviteViewController:roomViewController];
-}
-
 - (void)startInvitationGameWithMinPlayers:(int)minPlayers maxPlayers:(int)maxPlayers
 {
-  // 2-4 player invitation UI
   NSLog(@"Showing a RTRVC with max players of %d", maxPlayers);
   GPGRealTimeRoomViewController *roomViewController =
       [[GPGRealTimeRoomViewController alloc] initWithMinPlayers:minPlayers maxPlayers:maxPlayers];
@@ -54,7 +41,6 @@ static MPManager *_instance = nil;
         [roomsWithInvites addObject:roomData];
       }
 }
-    
     GPGRealTimeRoomViewController *invitesRoom = [[GPGRealTimeRoomViewController alloc] initWithRoomDataList:roomsWithInvites];
     [self.lobbyDelegate showInviteViewController:invitesRoom];
   }];
@@ -69,9 +55,6 @@ static MPManager *_instance = nil;
 
 - (void)didReceiveRealTimeInviteForRoom:(GPGRealTimeRoomData *)room
 {
-  // Let's check and see if we're in the middle of a game
-  // The following code will bring up the in-game RoomViewController UI with the current
-  // invitation listed as a match invite
   NSMutableArray *roomDataList = [NSMutableArray arrayWithObject:room];
   GPGRealTimeRoomViewController *roomViewController =
   [[GPGRealTimeRoomViewController alloc] initWithRoomDataList:roomDataList];
@@ -79,12 +62,9 @@ static MPManager *_instance = nil;
   if ( [((TTAppDelegate *)[UIApplication sharedApplication].delegate).window.rootViewController.presentedViewController
       isEqual:self.lobbyDelegate]) {
     NSLog(@"And it looks like our lobby delegate is on top right now");
-    // Looks like our lobby delegate is on top right now
     [self.lobbyDelegate showInviteViewController:roomViewController];
   }
 }
-
-
 
 - (void)numberOfInvitesAwaitingResponse:(void (^)(int))returnBlock
 {
@@ -181,7 +161,6 @@ static MPManager *_instance = nil;
     NSData *data;
     NSString * str = [[NSString alloc]initWithFormat:@"%c%@",instruction, message];
     data = [str dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
-    //[self.roomToTrack sendReliableDataToOthers:data];
     [self.roomToTrack sendUnreliableDataToOthers:data];
   
 }

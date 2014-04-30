@@ -10,10 +10,8 @@
 #import "TTGameViewController.h"
 #import "TTSettingsViewController.h"
 
-@interface TTStartViewController () <UIAlertViewDelegate>
+@interface TTStartViewController ()
 
-
-- (IBAction)onlineMultiplayerButton:(id)sender;
 - (IBAction)leaderboardButton:(id)sender;
 - (IBAction)achievementsButton:(id)sender;
 - (IBAction)signIn:(id)sender;
@@ -49,10 +47,6 @@ static NSString * const kClientID = @"111039763950-dj91993gmav7o5dn26v65ga1lavlt
 
 #pragma mark - UIActions
 
-
-- (IBAction)onlineMultiplayerButton:(id)sender{
-    
-}
 - (IBAction)leaderboardButton:(id)sender{
     
 }
