@@ -22,6 +22,7 @@
 		8430D1491910E5E100434C7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1281910E5E100434C7E /* UIKit.framework */; };
 		8430D1511910E5E100434C7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8430D14F1910E5E100434C7E /* InfoPlist.strings */; };
 		8430D1531910E5E100434C7E /* Tic_tac_toeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D1521910E5E100434C7E /* Tic_tac_toeTests.m */; };
+		8430D15D1910E82000434C7E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8430D15C1910E82000434C7E /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8430D14E1910E5E100434C7E /* Tic tac toeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tic tac toeTests-Info.plist"; sourceTree = "<group>"; };
 		8430D1501910E5E100434C7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8430D1521910E5E100434C7E /* Tic_tac_toeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tic_tac_toeTests.m; sourceTree = "<group>"; };
+		8430D15C1910E82000434C7E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				8430D14C1910E5E100434C7E /* Tic tac toeTests */,
 				8430D1231910E5E100434C7E /* Frameworks */,
 				8430D1221910E5E100434C7E /* Products */,
+				8430D15C1910E82000434C7E /* Podfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8430D15D1910E82000434C7E /* Podfile in Resources */,
 				8430D13B1910E5E100434C7E /* Main_iPad.storyboard in Resources */,
 				8430D1401910E5E100434C7E /* Images.xcassets in Resources */,
 				8430D1381910E5E100434C7E /* Main_iPhone.storyboard in Resources */,
@@ -394,6 +398,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tic tac toe/Tic tac toe-Prefix.pch";
 				INFOPLIST_FILE = "Tic tac toe/Tic tac toe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tic tac toe/Tic tac toe-Prefix.pch";
 				INFOPLIST_FILE = "Tic tac toe/Tic tac toe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
