@@ -1,5 +1,5 @@
 //
-//  TTGameField.h
+//  TTGameFieldViewController.h
 //  Tic tac toe
 //
 //  Created by Misha on 30.04.14.
@@ -8,5 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TTGameField : UIView
+@interface TTGameFieldViewController : UIViewController
+
 @end

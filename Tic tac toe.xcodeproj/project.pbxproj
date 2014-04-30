@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7FEAECCA19112BCE0065CC57 /* GameField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEAECC919112BCE0065CC57 /* GameField.storyboard */; };
-		7FEAECCE19112C440065CC57 /* TTGameField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEAECCD19112C440065CC57 /* TTGameField.m */; };
+		7FEAECCE19112C440065CC57 /* TTBananasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEAECCD19112C440065CC57 /* TTBananasView.m */; };
+		7FEAECD119112D340065CC57 /* TTGameFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEAECD019112D340065CC57 /* TTGameFieldViewController.m */; };
 		8430D1251910E5E100434C7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1241910E5E100434C7E /* Foundation.framework */; };
 		8430D1271910E5E100434C7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1261910E5E100434C7E /* CoreGraphics.framework */; };
 		8430D1291910E5E100434C7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1281910E5E100434C7E /* UIKit.framework */; };
@@ -45,8 +46,10 @@
 /* Begin PBXFileReference section */
 		20AD6AD0019649148E72D77F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		7FEAECC919112BCE0065CC57 /* GameField.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GameField.storyboard; path = TTGameField/GameField.storyboard; sourceTree = "<group>"; };
-		7FEAECCC19112C440065CC57 /* TTGameField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTGameField.h; path = TTGameField/TTGameField.h; sourceTree = "<group>"; };
-		7FEAECCD19112C440065CC57 /* TTGameField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTGameField.m; path = TTGameField/TTGameField.m; sourceTree = "<group>"; };
+		7FEAECCC19112C440065CC57 /* TTBananasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTBananasView.h; path = TTGameField/TTBananasView.h; sourceTree = "<group>"; };
+		7FEAECCD19112C440065CC57 /* TTBananasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTBananasView.m; path = TTGameField/TTBananasView.m; sourceTree = "<group>"; };
+		7FEAECCF19112D340065CC57 /* TTGameFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGameFieldViewController.h; sourceTree = "<group>"; };
+		7FEAECD019112D340065CC57 /* TTGameFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGameFieldViewController.m; sourceTree = "<group>"; };
 		8430D1211910E5E100434C7E /* Tic tac toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic tac toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8430D1241910E5E100434C7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8430D1261910E5E100434C7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,8 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				7FEAECC919112BCE0065CC57 /* GameField.storyboard */,
-				7FEAECCC19112C440065CC57 /* TTGameField.h */,
-				7FEAECCD19112C440065CC57 /* TTGameField.m */,
+				7FEAECCC19112C440065CC57 /* TTBananasView.h */,
+				7FEAECCD19112C440065CC57 /* TTBananasView.m */,
+				7FEAECCF19112D340065CC57 /* TTGameFieldViewController.h */,
+				7FEAECD019112D340065CC57 /* TTGameFieldViewController.m */,
 			);
 			name = TTGameField;
 			sourceTree = "<group>";
@@ -388,8 +393,9 @@
 				8430D1351910E5E100434C7E /* TTAppDelegate.m in Sources */,
 				8430D1311910E5E100434C7E /* main.m in Sources */,
 				8430D16E1910FA0300434C7E /* TTSettingsViewController.m in Sources */,
+				7FEAECD119112D340065CC57 /* TTGameFieldViewController.m in Sources */,
 				8430D1661910F8BA00434C7E /* TTGameViewController.m in Sources */,
-				7FEAECCE19112C440065CC57 /* TTGameField.m in Sources */,
+				7FEAECCE19112C440065CC57 /* TTBananasView.m in Sources */,
 				8430D171191101DD00434C7E /* MPManager.m in Sources */,
 				8430D1631910F7CE00434C7E /* TTStartViewController.m in Sources */,
 			);
