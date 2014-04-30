@@ -14,7 +14,6 @@
 
 - (IBAction)leaderboardButton:(id)sender;
 - (IBAction)achievementsButton:(id)sender;
-- (IBAction)signIn:(id)sender;
 
 
 @end
@@ -52,12 +51,6 @@ static NSString * const kClientID = @"111039763950-dj91993gmav7o5dn26v65ga1lavlt
 }
 - (IBAction)achievementsButton:(id)sender{
     
-}
-
-- (IBAction)signIn:(id)sender {
-    if (![[GPGManager sharedInstance] isSignedIn]) {
-        [[GPPSignIn sharedInstance] authenticate];
-    }
 }
 
 #pragma mark - GPPSignIn delegate
