@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FEAECC8191127140065CC57 /* TTGameField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEAECC7191127140065CC57 /* TTGameField.m */; };
 		8430D1251910E5E100434C7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1241910E5E100434C7E /* Foundation.framework */; };
 		8430D1271910E5E100434C7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1261910E5E100434C7E /* CoreGraphics.framework */; };
 		8430D1291910E5E100434C7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1281910E5E100434C7E /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		20AD6AD0019649148E72D77F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		7FEAECC6191127140065CC57 /* TTGameField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGameField.h; sourceTree = "<group>"; };
+		7FEAECC7191127140065CC57 /* TTGameField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGameField.m; sourceTree = "<group>"; };
 		8430D1211910E5E100434C7E /* Tic tac toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic tac toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8430D1241910E5E100434C7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8430D1261910E5E100434C7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,6 +209,8 @@
 			children = (
 				8430D1641910F8BA00434C7E /* TTGameViewController.h */,
 				8430D1651910F8BA00434C7E /* TTGameViewController.m */,
+				7FEAECC6191127140065CC57 /* TTGameField.h */,
+				7FEAECC7191127140065CC57 /* TTGameField.m */,
 			);
 			name = GameViewController;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				8430D1311910E5E100434C7E /* main.m in Sources */,
 				8430D16E1910FA0300434C7E /* TTSettingsViewController.m in Sources */,
 				8430D1661910F8BA00434C7E /* TTGameViewController.m in Sources */,
+				7FEAECC8191127140065CC57 /* TTGameField.m in Sources */,
 				8430D171191101DD00434C7E /* MPManager.m in Sources */,
 				8430D1631910F7CE00434C7E /* TTStartViewController.m in Sources */,
 			);
