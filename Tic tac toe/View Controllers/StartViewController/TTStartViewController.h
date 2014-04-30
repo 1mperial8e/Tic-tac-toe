@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GooglePlus/GooglePlus.h>
 
-@interface TTViewController : UIViewController
+@class GPGSignIn;
+
+@interface TTStartViewController : UIViewController <GPPSignInDelegate>
 
 @end

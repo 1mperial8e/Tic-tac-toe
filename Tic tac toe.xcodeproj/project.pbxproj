@@ -15,7 +15,6 @@
 		8430D1351910E5E100434C7E /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D1341910E5E100434C7E /* TTAppDelegate.m */; };
 		8430D1381910E5E100434C7E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8430D1361910E5E100434C7E /* Main_iPhone.storyboard */; };
 		8430D13B1910E5E100434C7E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8430D1391910E5E100434C7E /* Main_iPad.storyboard */; };
-		8430D13E1910E5E100434C7E /* TTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D13D1910E5E100434C7E /* TTViewController.m */; };
 		8430D1401910E5E100434C7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8430D13F1910E5E100434C7E /* Images.xcassets */; };
 		8430D1471910E5E100434C7E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1461910E5E100434C7E /* XCTest.framework */; };
 		8430D1481910E5E100434C7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8430D1241910E5E100434C7E /* Foundation.framework */; };
@@ -23,6 +22,11 @@
 		8430D1511910E5E100434C7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8430D14F1910E5E100434C7E /* InfoPlist.strings */; };
 		8430D1531910E5E100434C7E /* Tic_tac_toeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D1521910E5E100434C7E /* Tic_tac_toeTests.m */; };
 		8430D15D1910E82000434C7E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8430D15C1910E82000434C7E /* Podfile */; };
+		8430D1631910F7CE00434C7E /* TTStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D1621910F7CE00434C7E /* TTStartViewController.m */; };
+		8430D1661910F8BA00434C7E /* TTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D1651910F8BA00434C7E /* TTGameViewController.m */; };
+		8430D16E1910FA0300434C7E /* TTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D16D1910FA0300434C7E /* TTSettingsViewController.m */; };
+		8430D171191101DD00434C7E /* MPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8430D170191101DD00434C7E /* MPManager.m */; };
+		C82AD14B0CC9480FAF4D22EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB9AC7F7C9F45B0B292FE53 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20AD6AD0019649148E72D77F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8430D1211910E5E100434C7E /* Tic tac toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic tac toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8430D1241910E5E100434C7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8430D1261910E5E100434C7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,8 +53,6 @@
 		8430D1341910E5E100434C7E /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
 		8430D1371910E5E100434C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		8430D13A1910E5E100434C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		8430D13C1910E5E100434C7E /* TTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
-		8430D13D1910E5E100434C7E /* TTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTViewController.m; sourceTree = "<group>"; };
 		8430D13F1910E5E100434C7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8430D1451910E5E100434C7E /* Tic tac toeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic tac toeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8430D1461910E5E100434C7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -57,6 +60,15 @@
 		8430D1501910E5E100434C7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8430D1521910E5E100434C7E /* Tic_tac_toeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tic_tac_toeTests.m; sourceTree = "<group>"; };
 		8430D15C1910E82000434C7E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8430D1611910F7CE00434C7E /* TTStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStartViewController.h; sourceTree = "<group>"; };
+		8430D1621910F7CE00434C7E /* TTStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTStartViewController.m; sourceTree = "<group>"; };
+		8430D1641910F8BA00434C7E /* TTGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGameViewController.h; sourceTree = "<group>"; };
+		8430D1651910F8BA00434C7E /* TTGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGameViewController.m; sourceTree = "<group>"; };
+		8430D16C1910FA0300434C7E /* TTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSettingsViewController.h; path = SettingsViewController/TTSettingsViewController.h; sourceTree = "<group>"; };
+		8430D16D1910FA0300434C7E /* TTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSettingsViewController.m; path = SettingsViewController/TTSettingsViewController.m; sourceTree = "<group>"; };
+		8430D16F191101DD00434C7E /* MPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPManager.h; sourceTree = "<group>"; };
+		8430D170191101DD00434C7E /* MPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPManager.m; sourceTree = "<group>"; };
+		BEB9AC7F7C9F45B0B292FE53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 				8430D1271910E5E100434C7E /* CoreGraphics.framework in Frameworks */,
 				8430D1291910E5E100434C7E /* UIKit.framework in Frameworks */,
 				8430D1251910E5E100434C7E /* Foundation.framework in Frameworks */,
+				C82AD14B0CC9480FAF4D22EF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +104,7 @@
 				8430D1231910E5E100434C7E /* Frameworks */,
 				8430D1221910E5E100434C7E /* Products */,
 				8430D15C1910E82000434C7E /* Podfile */,
+				20AD6AD0019649148E72D77F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +124,7 @@
 				8430D1261910E5E100434C7E /* CoreGraphics.framework */,
 				8430D1281910E5E100434C7E /* UIKit.framework */,
 				8430D1461910E5E100434C7E /* XCTest.framework */,
+				BEB9AC7F7C9F45B0B292FE53 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,12 +132,12 @@
 		8430D12A1910E5E100434C7E /* Tic tac toe */ = {
 			isa = PBXGroup;
 			children = (
+				8430D15E1910F7CE00434C7E /* Manager */,
+				8430D15F1910F7CE00434C7E /* View Controllers */,
 				8430D1331910E5E100434C7E /* TTAppDelegate.h */,
 				8430D1341910E5E100434C7E /* TTAppDelegate.m */,
 				8430D1361910E5E100434C7E /* Main_iPhone.storyboard */,
 				8430D1391910E5E100434C7E /* Main_iPad.storyboard */,
-				8430D13C1910E5E100434C7E /* TTViewController.h */,
-				8430D13D1910E5E100434C7E /* TTViewController.m */,
 				8430D13F1910E5E100434C7E /* Images.xcassets */,
 				8430D12B1910E5E100434C7E /* Supporting Files */,
 			);
@@ -158,6 +173,52 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8430D15E1910F7CE00434C7E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8430D16F191101DD00434C7E /* MPManager.h */,
+				8430D170191101DD00434C7E /* MPManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8430D15F1910F7CE00434C7E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8430D1601910F7CE00434C7E /* StartViewController */,
+				8430D1671910F8C200434C7E /* GameViewController */,
+				8430D16B1910F92000434C7E /* SettingsViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8430D1601910F7CE00434C7E /* StartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8430D1611910F7CE00434C7E /* TTStartViewController.h */,
+				8430D1621910F7CE00434C7E /* TTStartViewController.m */,
+			);
+			path = StartViewController;
+			sourceTree = "<group>";
+		};
+		8430D1671910F8C200434C7E /* GameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8430D1641910F8BA00434C7E /* TTGameViewController.h */,
+				8430D1651910F8BA00434C7E /* TTGameViewController.m */,
+			);
+			name = GameViewController;
+			sourceTree = "<group>";
+		};
+		8430D16B1910F92000434C7E /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8430D16C1910FA0300434C7E /* TTSettingsViewController.h */,
+				8430D16D1910FA0300434C7E /* TTSettingsViewController.m */,
+			);
+			name = SettingsViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8430D1561910E5E100434C7E /* Build configuration list for PBXNativeTarget "Tic tac toe" */;
 			buildPhases = (
+				2B4EAF7F15BE4CCB9C15B1B5 /* Check Pods Manifest.lock */,
 				8430D11D1910E5E100434C7E /* Sources */,
 				8430D11E1910E5E100434C7E /* Frameworks */,
 				8430D11F1910E5E100434C7E /* Resources */,
+				7D2DF7EA7C4D41D7B8385241 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +316,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B4EAF7F15BE4CCB9C15B1B5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2DF7EA7C4D41D7B8385241 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8430D11D1910E5E100434C7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +356,10 @@
 			files = (
 				8430D1351910E5E100434C7E /* TTAppDelegate.m in Sources */,
 				8430D1311910E5E100434C7E /* main.m in Sources */,
-				8430D13E1910E5E100434C7E /* TTViewController.m in Sources */,
+				8430D16E1910FA0300434C7E /* TTSettingsViewController.m in Sources */,
+				8430D1661910F8BA00434C7E /* TTGameViewController.m in Sources */,
+				8430D171191101DD00434C7E /* MPManager.m in Sources */,
+				8430D1631910F7CE00434C7E /* TTStartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +491,7 @@
 		};
 		8430D1571910E5E100434C7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20AD6AD0019649148E72D77F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -406,6 +506,7 @@
 		};
 		8430D1581910E5E100434C7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20AD6AD0019649148E72D77F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -477,6 +578,7 @@
 				8430D1581910E5E100434C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8430D1591910E5E100434C7E /* Build configuration list for PBXNativeTarget "Tic tac toeTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +587,7 @@
 				8430D15B1910E5E100434C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
